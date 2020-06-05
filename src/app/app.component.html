@@ -1,0 +1,12 @@
+<div style="text-align:center">
+  <h1>
+    Welcome to {{ title }}!
+  </h1>
+</div>
+<div class="p-20">
+<div class="d-flex p-10">
+<app-common-dropdown class="pr-10" labelName="Select Region" [dataList]="regionList" (selectedValue)=getCountries($event)></app-common-dropdown>
+<app-common-dropdown labelName="Select Country" [dataList] = countryList (selectedValue)="selectedCountry($event)"></app-common-dropdown>
+</div>
+<app-country-details-view></app-country-details-view>
+</div>

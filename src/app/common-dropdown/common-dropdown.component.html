@@ -1,0 +1,8 @@
+<div>
+<mat-form-field>
+  <mat-label>{{labelName}}</mat-label>
+  <mat-select disableRipple (selectionChange)="valueChanged($event.value)">
+    <mat-option *ngFor="let value of dataList" value="{{value}}">{{value}}</mat-option>
+  </mat-select>
+</mat-form-field>
+</div>
